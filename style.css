@@ -1,0 +1,69 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Karla', sans-serif;
+    background: #273549;
+}
+
+.container {
+    max-width: 750px;
+    width: 80%;
+    padding: 3em;
+}
+
+h1 {
+    font-family: 'Karla';
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+span {
+    color: #4adf86;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 1rem;
+    margin-bottom: -3em;
+}
+
+.head-p {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.generate {
+    background: #4adf86;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 2em;
+}
+
+hr {
+    opacity: 55%;
+}
+
+.passwords {
+    display: flex;
+    justify-content: space-between;
+}
+
+#password-one,
+#password-two {
+    width: 40%;
+    min-height: 50px;
+    background: #273549;
+    filter: drop-shadow(-4px 5px 8px rgba(0, 0, 0, 50%));
+    border: none;
+    color: #4adf86;
+}
+
