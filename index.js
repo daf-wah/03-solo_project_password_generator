@@ -110,3 +110,12 @@ function genRandPass() {
   passwordOne.textContent = randomPasswordOne;
   passwordTwo.textContent = randomPasswordTwo;
 }
+
+function copyPassOne() {
+  navigator.clipboard.writeText(passwordOne.textContent);
+  alert(`Copied the password: ${passwordOne.textContent}`);
+}
+function copyPassTwo() {
+  navigator.clipboard.writeText(passwordTwo.textContent);
+  alert(`Copied the password: ${passwordTwo.textContent}`);
+}
