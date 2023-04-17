@@ -46,6 +46,7 @@ span {
     border-radius: 10px;
     border: none;
     margin-bottom: 2em;
+    filter: drop-shadow(-4px 5px 8px rgba(0, 0, 0, 50%));
 }
 
 hr {
@@ -65,5 +66,6 @@ hr {
     filter: drop-shadow(-4px 5px 8px rgba(0, 0, 0, 50%));
     border: none;
     color: #4adf86;
+    font-size: 1rem;
 }
 

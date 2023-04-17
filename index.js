@@ -91,3 +91,22 @@ const characters = [
   "?",
   "/",
 ];
+
+let passwordOne = document.getElementById("password-one");
+let passwordTwo = document.getElementById("password-two");
+let passwordLength = 15;
+
+function genRandPass() {
+  function getRandomCharacter() {
+    let randomChar = Math.floor(Math.random() * characters.length);
+    return characters[randomChar];
+  }
+  let randomPasswordOne = "";
+  let randomPasswordTwo = "";
+  for (let i = 0; i < passwordLength; i++) {
+    randomPasswordOne += getRandomCharacter();
+    randomPasswordTwo += getRandomCharacter();
+  }
+  passwordOne.textContent = randomPasswordOne;
+  passwordTwo.textContent = randomPasswordTwo;
+}
